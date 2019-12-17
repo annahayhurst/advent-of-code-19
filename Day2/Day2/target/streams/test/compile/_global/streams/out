@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/aht08/Documents/Boost/AdventOfCode/Day2/Day2/src/test/scala/ProgramTest.scala:6:11: comparing values of types (Int, Int) and List[Int] using `==' will always yield false[0m
+[0m[[0m[33mwarn[0m] [0m[0m    assert(result == List(3500, 9, 10, 70, 2, 3, 11, 0, 99, 30, 40, 50))[0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
