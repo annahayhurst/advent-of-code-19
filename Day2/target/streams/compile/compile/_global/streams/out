@@ -1,6 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/aht08/Documents/Boost/AdventOfCode/Day2/Day2/src/main/scala/Program.scala:7:5: match may not be exhaustive.[0m
-[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: List((x: Int forSome x not in (1, 2, 99))), List((x: Int forSome x not in (1, 2, 99))), List((x: Int forSome x not in (1, 2, 99)), _), List((x: Int forSome x not in (1, 2, 99)), _, _), List((x: Int forSome x not in (1, 2, 99)), _, _, _), List(1), List(1, _), List(1, _, _), List(2), List(2, _), List(2, _, _), List(??), List(_, _), List(_, _, _), Nil[0m
-[0m[[0m[33mwarn[0m] [0m[0m    program match {[0m
-[0m[[0m[33mwarn[0m] [0m[0m    ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere was one unchecked warning; re-run with -unchecked for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m

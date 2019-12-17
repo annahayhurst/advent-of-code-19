@@ -23,6 +23,6 @@ class PasswordMatcherTest extends FunSuite {
   }
 
   test("A check of valid passwords between 122456 and 122457 returns 2") {
-    assert(PasswordMatcher.countMatches(122455, 122457, 0) == 2);
+    assert(PasswordMatcher.countMatches(128392, 643281, 0) == 2);
   }
 }

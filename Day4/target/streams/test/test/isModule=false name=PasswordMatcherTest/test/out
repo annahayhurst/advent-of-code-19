@@ -1,7 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0m[32mPasswordMatcherTest:[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- A sequence greater than 6 digits fails[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- A valid sequence of exactly 6 digits passes[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- A sequence with no doubles fails[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- A sequence with decreasing digits fails[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- A check of valid passwords between 122456 and 122457 returns 2 *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  0 did not equal 2 (PasswordMatcherTest.scala:26)[0m[0m

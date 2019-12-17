@@ -5,9 +5,10 @@ object PasswordMatcher {
       var total = counter;
       if(isMatch(start.toString.map(_.asDigit).toList.asInstanceOf[List[Int]])) total += 1
       countMatches(start + 1, end, total)
+    } else {
+      counter
     }
 
-    counter
   }
 
 
@@ -20,6 +21,8 @@ object PasswordMatcher {
           false
       }
     }
+
+    def hasTriple(sequence: List[Int])
 
     def decreases(sequence: List[Int]): Boolean = {
       sequence match {
