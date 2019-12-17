@@ -1,6 +1,8 @@
-typealias Image = [String: Layer]
+typealias Image = [Int: Layer]
 typealias Layer = [[Pixel]]
 typealias Pixel = Character
+
+// Part 1
 
 func process(input: [Pixel], width: Int, height: Int) -> Image {
     let layerLength = width*height
@@ -14,7 +16,7 @@ func process(input: [Pixel], width: Int, height: Int) -> Image {
             let row = Array(input[j ..< j+width])
             currentLayer.append(row)
         }
-        image["Layer \(i)"] = currentLayer
+        image[i] = currentLayer
         layerIndex += 1
     }
     
@@ -34,8 +36,8 @@ func find(value: Pixel, within layer: Layer) -> Int {
     return valueCount
 }
 
-func findLayerWithMinimum(of value: Pixel, within image: Image) -> String {
-    var foundLayer = ""
+func findLayerWithMinimum(of value: Pixel, within image: Image) -> Int {
+    var foundLayer = 0
     var minCount = 9999;
     for (label, layer) in image {
         let valueCount = find(value: value, within: layer)
@@ -45,4 +47,25 @@ func findLayerWithMinimum(of value: Pixel, within image: Image) -> String {
         }
     }
     return foundLayer
+}
+
+// Part 2
+
+func decode(image: Image, width: Int, height: Int) -> Layer {
+    var decodedImage = Layer()
+    for j in 0 ..< (height) {
+    decodedImage.append([])
+        for i in 0 ..< (width) {
+            for layer in 0 ..< image.count {
+                let pixel = image[layer]?[j][i]
+                guard pixel! == "2" else {
+                    decodedImage[j].append(pixel!); 
+                    break;
+                }
+            }
+        }
+    print("\(j): \(decodedImage[j])")
+    }
+
+    return decodedImage
 }
